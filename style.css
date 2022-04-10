@@ -26,3 +26,6 @@ a {
 .bg_test {
     background-image: url(162619671-28ef800b-c03a-42a9-95af-ba595d4c1b0e.png);    /* 背景画像指定 */
 }
+セレクタ {
+    background-repeat: 繰り返しの指定;
+}
