@@ -24,16 +24,16 @@ a {
     background-image: url(D639C0D2-99A6-483D-BE9B-1148354BAFBC.png);
 }
 .bg_test {
-    background-image: url(D639C0D2-99A6-483D-BE9B-1148354BAFBC.png);    /* 背景画像指定 */
+    background-image: url"D639C0D2-99A6-483D-BE9B-1148354BAFBC.png";    /* 背景画像指定 */
 }
 セレクタ {
     background-repeat: 繰り返しの指定;
 }
 .bg_test {
-    background-image: url(D639C0D2-99A6-483D-BE9B-1148354BAFBC.png);     /* 背景画像指定 */
+    background-image: url"D639C0D2-99A6-483D-BE9B-1148354BAFBC.png";     /* 背景画像指定 */
     background-repeat: repeat-x;                /* 背景の繰り返し設定 */
 }
 .bg_test {
-    background-image: url(D639C0D2-99A6-483D-BE9B-1148354BAFBC.png);    /* 背景画像指定 */
+    background-image: url"D639C0D2-99A6-483D-BE9B-1148354BAFBC.png";    /* 背景画像指定 */
     background-size:  cover;                /* 画像のサイズ指定 */
 }
