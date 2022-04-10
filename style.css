@@ -20,3 +20,6 @@ a {
     padding:  150px;        /* 余白指定 */
     border: solid 2px;      /* 枠線指定 */
 }
+セレクタ {
+    background-image: url(https://user-images.githubusercontent.com/103340011/162619671-28ef800b-c03a-42a9-95af-ba595d4c1b0e.png);
+}
