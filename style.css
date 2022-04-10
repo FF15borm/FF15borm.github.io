@@ -9,3 +9,8 @@ h1 {
 a {
     color: dark;
 }
+body {
+  background-image: url(https://user-images.githubusercontent.com/103340011/162624208-435c2b1e-7afa-4c2a-a21d-ea85eea19593.jpeg);
+}
+background-image: url(https://user-images.githubusercontent.com/103340011/162624208-435c2b1e-7afa-4c2a-a21d-ea85eea19593.jpeg );
+background-repeat:repeat
