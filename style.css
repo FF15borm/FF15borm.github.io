@@ -21,11 +21,19 @@ a {
     border: solid 2px;      /* 枠線指定 */
 }
 セレクタ {
-    background-image: url(162619671-28ef800b-c03a-42a9-95af-ba595d4c1b0e.png);
+    background-image: url(https://user-images.githubusercontent.com/103340011/162619671-28ef800b-c03a-42a9-95af-ba595d4c1b0e.png);
 }
 .bg_test {
-    background-image: url(162619671-28ef800b-c03a-42a9-95af-ba595d4c1b0e.png);    /* 背景画像指定 */
+    background-image: url(https://user-images.githubusercontent.com/103340011/162619671-28ef800b-c03a-42a9-95af-ba595d4c1b0e.png);    /* 背景画像指定 */
 }
 セレクタ {
-    background-repeat: 繰り返しの指定;
+    background-repeat: 繰り返しの指定;https://user-images.githubusercontent.com/103340011/162619671-28ef800b-c03a-42a9-95af-ba595d4c1b0e.png
+}
+.bg_test {
+    background-image: url(repeat_test.png);     /* 背景画像指定 */
+    background-repeat: repeat-x;                /* 背景の繰り返し設定 */
+}
+.bg_test {
+    background-image: url(test_img.jpg);    /* 背景画像指定 */
+    background-size:  cover;                /* 画像のサイズ指定 */
 }
