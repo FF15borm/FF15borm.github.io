@@ -1,16 +1,14 @@
 body {
     background-color: #C3D941;
 }
-
-h1 {
-    color: #ffffff;
 }
 padding: 1em;
   border: 3px solid #ccc;
-
-
 border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
 }
+h1 {
+    color: #ffffff;
+
 * {
   margin: 0;
   background-color: #e6e6fa; /* 薄い紫色 */
