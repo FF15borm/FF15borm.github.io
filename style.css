@@ -36,7 +36,7 @@
 }
  
 body {
-    background-color: #C3D941;
+    background-color:#C3D941;
 }
 }
 padding: 1em;
@@ -44,7 +44,7 @@ padding: 1em;
 border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
 }
 h1 {
-    color: #ffffff;
+    color:#ffffff;
 
 * {
   margin: 0;
