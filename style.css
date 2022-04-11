@@ -1,3 +1,9 @@
+header {
+  background-image: url(images/yacht.png);
+  background-repeat: no-repeat;
+  width: 700px;
+}
+/* 背景画像の繰り返し表示をしない */
 
 body {
     background-color:#C3D941;
