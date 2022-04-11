@@ -1,4 +1,13 @@
-
+@media (prefers-color-scheme: dark) {
+　//html全体の色を反転させる
+  html{
+      filter: invert(1) hue-rotate(180deg);
+  }
+　//画像は再反転させて戻す
+  html img{
+      filter: invert(1) hue-rotate(180deg);
+  }
+}
 header {
   background-image: url(FF15borm.github.io/6463136F-66C2-4D68-B3B9-894609E74994.png);
   background-repeat: no-repeat;
