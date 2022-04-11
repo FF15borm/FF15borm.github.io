@@ -1,3 +1,40 @@
+.matrix .bg-wrap,
+.matrix .bg-wrap .inn {
+  display: block;
+}
+ 
+.matrix .bg-wrap {
+  overflow: hidden;
+  opacity: 0;
+}
+ 
+.matrix .bg-wrap + .bg-wrap {
+  margin-top: 10px;
+}
+ 
+.matrix .bg-wrap .inn.large {
+  font-size: 36px;
+  font-weight: bold;
+}
+.matrix .bg-wrap .inn.small {
+  font-size: 15px;
+}
+ 
+.matrix .bg-wrap .inn {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 100);
+  transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+ 
+.matrix.is-animated .bg-wrap {
+  opacity: 1;
+}
+ 
+.matrix.is-animated .bg-wrap .inn {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+ 
 body {
     background-color: #C3D941;
 }
