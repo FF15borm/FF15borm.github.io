@@ -23,10 +23,10 @@ header {
 /* 背景画像の繰り返し表示をしない */
 
 body {
-    background-color:#C09933;
+    background-color:#ced1d3;
 }
 h1 {
-    color:#000000;
+    color:#bce2e8;
  }
    header {
   width: 1000px;
