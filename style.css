@@ -11,3 +11,20 @@ padding: 1em;
 
 border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
 }
+* {
+  margin: 0;
+  background-color: #e6e6fa; /* 薄い紫色 */
+}
+/* 省略 */
+.geometric {
+  background-size: 50px 50px;
+  background-image: radial-gradient(closest-side, transparent 99%, #fff 100%),
+                    /* 四隅のみ白塗りし、後から上塗りされないようにする。 */
+                    radial-gradient(circle at top left, #ff1493 35%, transparent 35% 100%),
+                    /* 左上から35％までピンク、白塗りされた箇所以外がピンク色になる。 */
+                    radial-gradient(circle at top right, #1492ff 35%, transparent 35% 100%),
+                    /* 右上から35％まで水色、白塗りされた箇所以外がピンク色になる。 */
+                    radial-gradient(circle at bottom left, #1492ff 35%, transparent 35% 100%),
+                    radial-gradient(circle at bottom right, #ff1493 35%, transparent 35% 100%);
+  background-repeat: repeat;
+}
