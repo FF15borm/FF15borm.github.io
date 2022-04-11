@@ -28,3 +28,13 @@ border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
                     radial-gradient(circle at bottom right, #ff1493 35%, transparent 35% 100%);
   background-repeat: repeat;
 }
+.geometric {
+  background-size: 50px 50px;
+  background-image: radial-gradient(closest-side, transparent 99%, #fff 100%),
+                    /* 四隅のみ白塗りし、後から上塗りされないようにする。 */
+                    radial-gradient(circle at top left, #000 35%, transparent 35% 100%),
+                    radial-gradient(circle at top right, #000 35%, transparent 35% 100%),
+                    radial-gradient(circle at bottom left, #000 35%, transparent 35% 100%),
+                    radial-gradient(circle at bottom right, #000 35%, transparent 35% 100%);
+  background-repeat: repeat;
+}
