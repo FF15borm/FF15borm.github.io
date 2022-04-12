@@ -25,6 +25,39 @@ body{
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
+
+.bar{
+  position:fixed;
+  top:0;
+  width:400px;
+  box-sizing:border-box;
+  height:100px;
+  padding:20px;
+  background:skyblue;
+  z-index:500;
+}
+
+.page{
+  padding:50px;
+  width:300px;
+  padding-bottom:150px;/*ボタンとの重なり回避*/
+  margin-top:100px;/*ナビゲーションとの重なり回避*/
+  background:linear-gradient(lightpink,tomato,gold);
+}
+
+.btn{
+  position:fixed;
+  display:block;
+  bottom:0;
+  left:0;
+  width:400px;
+  height:100px;
+  line-height:100px;
+  background:rgba(0,0,0,.5);
+  text-align:center;
+  color:#fff;
+}
+
 /* ヘッダー */
 header{
     width: 100%;
