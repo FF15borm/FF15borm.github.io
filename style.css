@@ -1,4 +1,25 @@
+*{box-sizing: border-box;}
 
+ul.gnav-navi-1{
+background: #c71585;
+padding: 0;
+text-align: center;
+}
+ul.gnav-navi-1 li{
+display: inline-block;
+}
+
+
+ul.gnav-navi-1 li a{
+display: block;
+padding: 1em;
+color: #fff;
+text-decoration: none;
+}
+ul.gnav-navi-1 a::first-line{
+font-size: 16px;
+font-weight: bold;
+}
 @media (prefers-color-scheme: dark) {
 　//html全体の色を反転させる
   html{
