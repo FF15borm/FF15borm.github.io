@@ -106,3 +106,39 @@ h2::before {
     margin: 0; 
     padding: 0;
 }
+nav{
+border-bottom: 1px solid #ccc;
+}
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 0;
+width: 80%;
+text-align: center;
+}
+nav ul li{
+display: table-cell;
+min-width: 50px;
+border-right: 1px solid #ccc;
+}
+nav ul li:first-child{
+border-left: 1px solid #ccc;
+}
+nav ul li a{
+display: block;
+width: 100%;
+padding: 10px 0;
+text-decoration: none;
+color: #aaa;
+}
+nav ul li a:hover{
+background-color:#F8E750;
+border-bottom: 5px solid #F8E750;
+}
+nav ul li.current{
+font-weight: bold;
+}
+nav ul li.current a{
+border-bottom: 5px solid #00B0F0;
+color: #00B0F0;
+}
