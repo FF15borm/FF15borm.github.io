@@ -97,3 +97,49 @@ h2 {
     margin: 0; 
     padding: 0;
 }
+/*ハンバーガーメニュー下準備*/
+#menubtn img{
+    width:100%;
+    max-width: 50px;
+}
+.w1000{
+    max-width:1000px;
+    margin: 0 auto;
+}
+nav{
+    background-color:#ccc;
+    padding:20px 3%;
+}
+.nav-hidden{
+    display:none;
+}
+nav{
+    background-color:#ccc;
+    padding:20px 3%;
+    display: none;/*追加*/
+}
+/*ハンバーガーメニュー*/
+#menubtn img{
+    width:100%;
+    max-width: 50px;
+}
+.w1000{
+    max-width:1000px;
+    margin: 0 auto;
+}
+nav{
+    background-color:#ccc;
+    padding:20px 3%;
+    display: none;
+}
+#nav-input:checked ~ nav {/*チェック入ってるとき ~ メニューが*/
+    display: block;/*追加*/
+    animation: 1s fadeIn;/*追加*/
+}
+@keyframes fadeIn {
+    from { opacity: 0; }/*追加*/
+    to { opacity: 1; }/*追加*/
+  }
+.nav-hidden{
+    display:none;
+}
