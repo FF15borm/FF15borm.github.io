@@ -43,37 +43,6 @@
 
 <body>
     <div>
-        <!--フォーム-->
-        <form name="login_form">
-            <center>
-                <h1 class="contact-title">ログイン</h1>
-                <p>ID, Passwordご入力の上, 「認証」ボタンをクリックしてください.</p>
-            </center>
-            <div>
-
-                <center>
-                    <div>
-                        <input type="id" name="id" placeholder="ID">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="password" name="pass" placeholder="Password" onchange="nextPage()">
-                    </div>
-                </center>
-
-            </div>
-            <button type="button" onClick="nextPage();">認証</button>
-        </form>
-
-        <!--ログイン処理-->
-        <script language="JavaScript" type="text/javascript">
-            function nextPage() {
-                id = document.login_form.id.value
-                pwd = document.login_form.pass.value;
-                location.href = id + pwd + ".html";
-            }
-        </script>
-
     </div>
 </body>
 
