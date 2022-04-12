@@ -21,11 +21,17 @@ header {
   width: 700px;
 }
 /* 背景画像の繰り返し表示をしない */
-  background: #feac5e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #feac5e, #c779d0, #4bc0c8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body{
+  background: orange ;/*保険用*/
+  background: -moz-linear-gradient(top, gold 0%, orange 100%);/*古いFireFox向け*/
+  background: -webkit-linear-gradient(top, gold 0%,orange 100%);/*古いSafariなど向け*/
+  filter:progid:DXImageTransform.Microsoft.Gradient(
+    startColorstr='gold',
+    endColorstr='orange',
+    GradientType=0 );/*IE9以下向け*/
+  background: linear-gradient(to bottom, gold 0%, orange 100%);/*正規の指定*/
+} 
 
-}
 h1 {
     color:#bce2e8;
  }
