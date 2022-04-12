@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>初心者向けホームページテンプレート tp_beginner7</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html">SAMPLE 株式会社</a></h1>
+</header>
+
+<!--メインメニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="company.html">COMPANY</a></li>
+<li><a href="service.html">SERVICE</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section>
+
+<h2>会社概要</h2>
+
+<table class="ta1">
+<caption>大見出しが必要ならここを使います</caption>
+<tr>
+<th>企業名</th>
+<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>所在地</th>
+<td>Google Mapで地図を埋め込みたい場合は<a href="https://template-party.com/file/pickup_googlemap.html">マニュアル</a>をご覧下さい。<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</td>
+</tr>
+<tr>
+<th>電話番号</th>
+<td>03-0000-0000</td>
+</tr>
+</table>
+
+</section>
+
+<section id="about">
+
+<h2>2021年10月「以前」に弊社テンプレートを利用した事のあるお客様へ</h2>
+<p>2021年11月以降からの配布テンプレートについて、かなり仕様が変更されましたので、メインとなる内容のみピックアップさせて頂きます。<br>
+※今後しばらく仕様の変更が入るかもしれません。</p>
+<ul>
+<li><span class="color-check">モバイルファースト</span>のcssに変更しました。小さな端末からの設定になるのでご注意下さい。</li>
+<li><span class="color-check">IE10以前は考慮しておりません。</span>Microsoft社のIEサポートが2022年6月で終了する為、IE11の動作チェックも近いうちに終了させて頂きます。</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>当テンプレートの使い方</h2>
+
+<h3>初心者向けマニュアル公開中</h3>
+<p>画像加工やテンプレートの編集方法、無料サーバーを使ってサイトを公開するなど動画をまじえてわかりやすく解説しています。<br>
+<a href="https://template-party.com/file/" target="_blank">初心者向けマニュアルはこちら。</a></p>
+
+<h3>titleタグ、copyright、metaタグ等の設定</h3>
+<p><strong class="color-theme">titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。</strong><br>
+まず、htmlソースが見れる状態にして、<br>
+<span class="look">&lt;title&gt;初心者向けホームページテンプレート tp_beginner7&lt;/title&gt;</span><br>
+を編集しましょう。<br>
+あなたのホームページ名が「SAMPLE 株式会社」だとすれば、<br>
+<span class="look">&lt;title&gt;SAMPLE 株式会社&lt;/title&gt;</span><br>
+とすればＯＫです。SEO対策もするなら冒頭に重要なワードを入れておきましょう。</p>
+<p><strong class="color-theme">copyrightを変更しましょう。</strong><br>
+続いてhtmlの下の方にある、<br>
+<span class="look">Copyright&copy; Sample Company All Rights Reserved.</span><br>
+の部分もあなたのサイト名に変更します。</p>
+<p><strong class="color-theme">metaタグを変更しましょう。</strong><br>
+htmlソースが見える状態にしてmetaタグを変更しましょう。</p>
+<p>ソースの上の方に、<br>
+<span class="look">content=&quot;ここにサイト説明を入れます&quot;</span><br>
+という部分がありますので、テキストをサイトの説明文に入れ替えます。検索結果の文面に使われる場合もありますので、見た人が来訪したくなるような説明文を簡潔に書きましょう。</p>
+
+<h3>自作の画像ロゴに置き換えたい場合</h3>
+<p>当テンプレートの上部のサイト名（SAMPLE株式会社）はテキストで直接入力されています。<br>
+これを画像に置き換えたい場合、単純にテキスト部分と置き換えてもらえばOKです。</p>
+<p>現状<br>
+<span class="look">&lt;h1 id=&quot;logo&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;<span class="color-check">SAMPLE 株式会社</span>&lt;/a&gt;&lt;/h1&gt;</span></p>
+<p>置き換え後（※logo.pngという画像をimagesフォルダに入れた場合の例）<br>
+<span class="look">&lt;h1 id=&quot;logo&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;<span class="color-check">&lt;img src=&quot;images/logo.png&quot; alt=&quot;SAMPLE株式会社&quot;&gt;</span>&lt;/a&gt;&lt;/h1&gt;</span></p>
+<p>画像に置き換えた場合の画像幅は、cssフォルダのstyle.cssの、<br>
+<span class="look">header #logo img {</span><br>
+の中にあるwidthの値で変更できます。</p>
+
+<h3>トップページのスライドショー（slick）の解説</h3>
+<p>トップページのスライドショーには、slickを使用しています。<br>
+テンプレート内の解説及び、当サイト上でのマニュアル以外のサポートは基本的には行なっておりませんので、使いこなしたい方はGoogle検索などかけてみて下さい。</p>
+<p><a href="https://kenwheeler.github.io/slick/" target="_blank">slick 公式サイト</a></p>
+<p>slickのスタイルは、cssフォルダのslick.cssで設定しています。それ以外に、jsフォルダのslick.jsにも設定があります。スライドの速度はこのslick.js内の「autoplaySpeed」で調整できます。<br>
+他、slickには様々なオプションもあるので気になる人、カスタマイズしたい場合は「slick オプション」などでGoogle検索してみて下さい。</p>
+<p><strong class="color-theme">画像の追加方法</strong><br>
+html側に既存のタグをコピペするだけでOKです。<br>
+例えば「4.jpg」という画像をスライドショーに１枚追加したい場合、現状では、<br>
+<span class="look">&lt;div class=&quot;mainimg&quot;&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/2.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/3.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;/div&gt;</span><br>
+ですが、これに１行加えるだけです。<br>
+<span class="look">&lt;div class=&quot;mainimg&quot;&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/2.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/3.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+<span class="color-check">&lt;div&gt;&lt;img src=&quot;images/4.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;</span><br>
+&lt;/div&gt;</span></p>
+<p><strong class="color-theme">画像ごとにリンクも設定できます</strong><br>
+通常の画像へのリンク設定と同じやり方でOKです。<br>
+<span class="look">&lt;div&gt;<span class="color-check">&lt;a href=&quot;index.html&quot;</span>&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;<span class="color-check">&lt;/a&gt;</span>&lt;/div&gt;</span><br>
+</p>
+<p><strong class="color-theme">slickを使う為に必要なタグ、ファイル類。</strong><br>
+1. html下部にある、「jQueryファイルの読み込み」のタグ。※下のjsファイルより先に読み込んで下さい。<br>
+2. その下にある、「スライドショー（slick）」からの数行のタグ。<br>
+3. jsフォルダ内の「js/slick.js」。</p>
+
+<h3>フォントサイズ（rem）について</h3>
+<p>cssフォルダのstyle.cssで、基準となるフォントサイズを「２箇所」記載しています。<br>
+全体的にフォントサイズを大きくまたは小さくしたいなら、この基準サイズだけを変更すればOKです。</p>
+<p>１つ目はstyle.cssの冒頭に記載されている以下。<br>
+<span class="look">font-size: 14px;</span><br>
+２つ目は下の方にある、画面幅800px以上の端末向けで、以下。<br>
+<span class="look">font-size: 18px;</span></p>
+<p>上記以外のフォントサイズは全て「rem」の単位がついていますが、これは、上のpxのサイズに「相対的」に出しているサイズになります。<br>
+例えば、800px未満の画面幅の時の基準サイズは「14px」なので、他の要素などで28pxで表示させたい場合は、<br>
+28px ÷ 14px = 2rem(28px)<br>
+となります。（cssの指定は、font-size: 2rem;　となる。）</p>
+<p>10pxにしたい場合も同様です。この場合、<br>
+10px ÷ 14 = 0.7142...<br>
+と小数点が続いてしまいますが、厳密に出す必要はないので、適当に切り上げて、<br>
+font-size: 0.7rem;<br>
+あたりにしておけばOKです。</p>
+<p>または計算などせず、「見た目」でremの数値を決めてしまってもいいでしょう。<br>
+実際このテンプレートのremは、厳密に割り出したわけじゃなく、雰囲気(何となく適当)で指定しています。</p>
+
+<h3>その他、テンプレートのカラーやデザイン変更などは</h3>
+<p>cssフォルダのstyle.cssで行って下さい。詳しい解説も書かれています。<br>
+cssの解説は、「<span class="color1">/*</span>」と「<span class="color1">*/</span>」の間にコメントとして入れています。「<span class="color1">/*</span>」と「<span class="color1">*/</span>」はcss用のコメントタグであり、飾りではないので削除をしないで下さい。もし解説を削除したい場合は、「<span class="color1">/*</span>」と「<span class="color1">*/</span>」含めて丸ごと削除して下さい。</p>
+
+<h3>うまく編集できない場合は</h3>
+<p><a href="https://template-party.com/bbs/">サポート掲示板</a>からご質問下さい。対応可能な範囲内でサポートしております。</p>
+
+</section>
+
+</main>
+
+<footer>
+<ul class="icon">
+<li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+<li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+<li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>
+<li><a href="#"><img src="images/icon_line.png" alt="LINE"></a></li>
+</ul>
+<small>Copyright&copy; <a href="index.html">Sample Company</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--jQueryファイルの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--ページの上部へ戻るボタンとスクリプト-->
+<p class="pagetop"><a href="#">↑</a></p>
+<script src="js/openclose_tp.js"></script>
+
+</body>
+</html>
