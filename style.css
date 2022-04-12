@@ -193,3 +193,6 @@ h2::before {
     background-color: #3584bb;
     transition: all 0.5s;/*アニメーション設定*/
 }
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
