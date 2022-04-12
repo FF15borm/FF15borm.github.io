@@ -9,7 +9,69 @@ ul.gnav-navi-1 li{
 display: inline-block;
 }
 
-
+body{
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+/* ヘッダー */
+header{
+    width: 100%;
+    padding: 10px 0;
+}
+.header_wrapper{
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_wrapper h1{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.header_wrapper h1 a{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 34px;
+}
+.header_wrapper h1 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+/* ナビゲーション */
+.gnav{
+    width: 100%;
+    background-color: #333;
+}
+.gnav_wrapper{
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+}
+.gnav_wrapper li{
+    border-left: #888 1px solid;
+    text-align: center;
+    width: calc(100%/7);
+    transition: all  0.3s ease;
+}
+.gnav_wrapper li:last-child{
+    border-right: #888 1px solid;
+}
+.gnav_wrapper li:hover{
+    background-color: #888;
+}
+.gnav_wrapper li a{
+    display: block;
+    padding: 1.3em 0;
+    color: #fff;
+    text-decoration: none;
+}
 ul.gnav-navi-1 li a{
 display: block;
 padding: 1em;
