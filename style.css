@@ -8,7 +8,18 @@ text-align: center;
 ul.gnav-navi-1 li{
 display: inline-block;
 }
-
+#fixed {
+  position: fixed;
+  /*基準を画面の左上に*/
+  top: 0;
+  left: 0;
+  /*余白が入らないように*/
+  margin: 0;
+  /*以下装飾*/
+  width: 100%;
+  background: #FFC778;
+  color:white;
+}
 body{
     letter-spacing: 0.1em;
     font-weight: 400;
