@@ -27,8 +27,8 @@ body{
   background: -moz-linear-gradient(top,lightblue 0%,gray 100%);/*古いFireFox向け*/
   background: -webkit-linear-gradient(top,lightblue 0%,gray 100%);/*古いSafariなど向け*/
   filter:progid:DXImageTransform.Microsoft.Gradient(
-    startColorstr='gold',
-    endColorstr='orange',
+    startColorstr='lightblue',
+    endColorstr='gray',
     GradientType=0 );/*IE9以下向け*/
   background: linear-gradient(to bottom,lightblue 0%,gray 100%);/*正規の指定*/
 } 
