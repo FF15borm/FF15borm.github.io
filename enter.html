@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="!bbs_css!" rel="stylesheet">
+<title>アクセス認証</title>
+</head>
+<body onload="document.enter.pw.focus()">
+
+<div id="head">
+	<div id="head-in">
+		<strong>:: アクセス認証 ::</strong>
+	</div>
+</div>
+<div id="main">
+<div id="main-in">
+
+<div id="reg-area">
+<div id="reg-box">
+<form action="!bbs_cgi!" method="post" name="enter">
+<input type="hidden" name="login" value="1">
+<div id="enter">
+<p>パスワード認証</p>
+<p>
+	PASSWORD :<br>
+	<input type="password" name="pw" class="enter">
+</p>
+<p><button type="submit" class="button small">LOG IN</button></p>
+</div>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

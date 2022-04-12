@@ -1,0 +1,115 @@
+body {
+	font: 90% 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,Osaka,'MS PGothic',arial,helvetica,sans-serif;
+	padding: 0;
+	margin: 0;
+	background: #E7E8F2;
+}
+.red {
+	color: red;
+}
+.grn {
+	color: green;
+}
+.form-tbl {
+	margin: 1em;
+	border-collapse: collapse;
+}
+.form-tbl th, .form-tbl td {
+	padding: 8px;
+	border: 1px solid #666;
+}
+.form-tbl th {
+	background: #ccc;
+}
+.form-tbl td {
+	background: #fff;
+}
+b.sub {
+	color: green;
+}
+div.com {
+	margin-left: 2em;
+	font-size: 110%;
+	color: #804000;
+}
+div.ttl {
+	border-bottom: 1px solid #004080;
+	color: #004080;
+	padding: 5px;
+	margin: 8px 0;
+	font-weight: bold;
+}
+div.main {
+	border-top:1px dotted #000;
+	padding:6px;
+	margin-top:6px;
+}
+div.sub {
+	margin-left:3em;
+	padding:6px;
+}
+.ta-c {
+	text-align:center;
+}
+.ta-r {
+	text-align:right;
+}
+#head {
+	background:#3B5998;
+	color:#fff;
+	padding:3px;
+	font-weight:bold;
+}
+#body {
+	padding:6px;
+}
+.back-btn {
+	margin:3px;
+	text-align:right;
+}
+.menu-msg {
+	margin: 1em;
+}
+
+/* for login */
+#login {
+	width: 400px;
+	margin: 3em auto;
+	text-align: left;
+	padding: 1em 2em;
+	border-radius:6px;
+}
+#login legend {
+	padding: 5px;
+	font-weight: bold;
+}
+#login input[type="text"], #login input[type="password"] {
+	width: 300px;
+	padding: 5px;
+}
+#login input[type="submit"] {
+	width: 100px;
+	height: 30px;
+}
+#login p {
+	margin: 2em 0;
+}
+#err-box {
+	width: 400px;
+	margin: 2em auto;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 1em;
+	text-align: center;
+}
+#err-msg {
+	color: #dd0000;
+}
+#msg-box {
+	width: 400px;
+	margin: 2em;
+	border: 1px solid gray;
+	padding: 1em;
+	text-align: center;
+	color: #006400;
+}

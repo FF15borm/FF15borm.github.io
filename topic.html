@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="!bbs_css!" rel="stylesheet">
+<script src="!bbs_js!"></script>
+<title>!bbs_title!</title>
+</head>
+<body>
+<div id="head">
+<div id="head-in">
+	<div id="head-ttl"><h1>:: !bbs_title! ::</h1></div>
+	<div id="head-cnt">!counter!</div>
+	<div id="head-clr"></div>
+</div>
+</div>
+<div id="main">
+<div id="main-in">
+
+<div class="top-btn">
+<a href="!homepage!" class="button small">ホーム</a>
+<a href="!bbs_cgi!?bbs=0" class="button small">スレッド</a>
+<a href="!bbs_cgi!?mode=note" target="popwin" onclick="popup('!bbs_cgi!?mode=note')" class="button small">留意事項</a>
+<a href="!bbs_cgi!?mode=find&amp;bbs=1" class="button small">検索</a>
+<a href="!bbs_cgi!?mode=past&amp;bbs=1" class="button small">過去ログ</a>
+<a href="!admin_cgi!" class="button small">管理</a>
+</div>
+
+<div class="new-btn">
+	<input type="button" value="新規投稿" onclick="add_form();">
+</div>
+
+<form action="!regist_cgi!" method="post">
+<input type="hidden" name="mode" value="regist">
+<input type="hidden" name="reno" value="!reno!">
+<input type="hidden" name="bbs" value="1">
+<div id="reg-area">
+<div id="reg-box" style="display:none;">
+<table id="reg-tbl">
+<tr>
+	<th>おなまえ</th>
+	<td><input type="text" name="name" class="reg-name" value="!name!" maxlength="15"></td>
+</tr><tr>
+	<th>Ｅメール</th>
+	<td><input type="text" name="email" class="reg-name" value="!email!"></td>
+</tr><tr>
+	<th>タイトル</th>
+	<td>
+		<input type="text" name="sub" class="reg-url" value="!sub!" maxlength="15">
+		<input type="submit" class="reg-btn" value="投稿する">
+	</td>
+</tr><tr>
+	<th colspan="2">
+		コメント<br>
+    	<textarea class="reg-com" name="comment"></textarea>
+	</th>
+</tr><tr>
+	<th>参照先</th>
+	<td><input type="text" class="reg-url" name="url" value="!url!"></td>
+</tr><tr>
+	<th>アイコン</th>
+	<td>
+		<select name="icon">
+		<!-- op_icon -->
+		</select>
+		<!-- pop_icon_begin -->
+		[<a href="!bbs_cgi!?mode=icon" target="popwin" onclick="popup('!bbs_cgi!?mode=icon')">アイコン参照</a>]
+		<!-- pop_icon_end -->
+	</td>
+</tr><tr>
+	<th>暗証キー</th>
+	<td class="small">
+		<input type="password" name="pwd" class="reg-num" maxlength="8">
+		(英数字8文字以内)
+	</td>
+
+<!-- captcha -->
+</tr><tr>
+	<th>画像認証</th>
+	<td class="small">
+		<input type="text" name="captcha" class="reg-num" style="ime-mode:inactive" maxlength="8">
+		（右画像の数字入力） <img src="!captcha_cgi!?!str_crypt!" class="capt" alt="画像認証">
+		<input type="hidden" name="str_crypt" value="!str_crypt!">
+	</td>
+<!-- /captcha -->
+
+</tr><tr>
+	<th>文字色</th>
+	<td>!color!</td>
+</tr>
+</table>
+</div>
+</div>
+</form>
+
+<table class="topic">
+<tr class="thead">
+	<th class="w-s">No</th>
+	<th>タイトル名</th>
+	<th class="w-m">投稿者</th>
+	<th class="w-s">返信数</th>
+	<th class="w-m">最終更新</th>
+</tr>
+
+<!-- loop -->
+<tr>
+	<td class="ta-c" data-label="記事No">!num!</td>
+	<td class="ta-l" data-label="タイトル"><strong><a href="!bbs_cgi!?res=!num!&amp;bbs=!bbs!&amp;pg=!pg!">!art-ttl!</a></strong></td>
+	<td class="w-m ta-l" data-label="投稿者"><b>!name!</b></td>
+	<td class="w-s ta-c" data-label="返信数">!res!</td>
+	<td class="w-m ta-l mini" data-label="最終更新">!update!</td>
+</tr>
+<!-- /loop -->
+
+</table>
+
+<div class="ta-c">
+<div class="pgtop">!page_btn!</div>
+<form action="!regist_cgi!" method="post">
+処理
+<select name="mode">
+<option value="log_edit">修正</option>
+<option value="log_dele">削除</option>
+</select>
+記事No<input type="text" name="no" size="3" style="ime-mode:inactive">
+暗証キー<input type="password" name="pwd" size="4" maxlength="8">
+<input type="submit" value="送信">
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
